@@ -2,37 +2,224 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #007399;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-section {
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-grouping {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: fit-content;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #007399;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.input-header {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 2px;
+}
+
+.field-name {
+  font-size: 12px;
+}
+
+.input {
+  display: flex;
+  margin: auto;
+  padding: 3px 15px;
+}
+
+.input-field {
+  margin-left: 10px; 
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 12px;
+}
+
+.clear-all-button {
+  height: 70px;
+  width: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: red;
   color: white;
+  border: white;
+  border-radius: 20px;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.show-button {
+  height: 70px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f1c45c;
+  color: white;
+  border: white;
+  border-radius: 20px;
+  margin: auto;
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculate-button {
+  height: 70px;
+  width: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  border: white;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.result-section {
+  margin-top: 20px;
+}
+
+.tabs-top {
+  display: flex;
+}
+
+.tab-header {
+  border-top-style: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: fill;
+  height: 40px;
+  margin: 0;
+  font-size: 16px;
+  background-color: lightgray;
+}
+
+.tab-selected {
+  border-color: #007399;
+  border-bottom: none;
+  font-weight: bold;
+  background-color: white;
+}
+
+.delete-tab {
+  height: 15px;
+  width: 15px;
+  align-self: right;
+}
+
+.tab-content {
+  border-width: 2px;
+  display: none;
+  font-size: 12px;
+}
+
+.tab-content-active {
+  display: block;
+}
+
+.result-text {
+  text-align: center;
+  padding: 8px;
+}
+
+.result-row {
+  display: flex;
+}
+.result-row:nth-child(even) {
+  background-color: #b0e0e6; 
+}
+
+.left {
+  text-align: left;
+  width: 70%;
+}
+
+.right {
+  text-align: right;
+  width: 30%;
+  font-weight: bold;
+}
+
+.content-header {
+  display: flex;
+  margin: auto;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: solid;
+  padding-top: 25px;
+}
+
+.header-text {
+  margin: auto;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  width: 50%;
+}
+
+.content:last-child {
+  border-left: solid;
+}
+
+.input-col {
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+}
+
+.result-header {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 2px;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.result-group {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+
+.footer {
+  background-color: #007399;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }

@@ -88,9 +88,6 @@ function App() {
       }
 
     });
-    // TODO fix the empty field problem
-    //console.log(emptyFields);
-    console.log(inputNumbers);
 
     const results = new Calculator(inputNumbers);
 
@@ -99,18 +96,11 @@ function App() {
       calcResults: {...results}
     };
 
-    console.log(tabData);
-
     setTabs([...tabs, tabData]);
   };
 
-
   const selectTab = (index) => {
     setSelectedTab(index);
-  }
-
-  const removeTab = (index) => {
-    console.log(tabs);
   }
 
   return (

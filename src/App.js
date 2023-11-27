@@ -5,6 +5,8 @@ import { formatNumber, removeCommas } from './numberFormat.js';
 
 const Calculator = require('./calculator.js');
 
+const port = 8080;
+
 function App() {
   const [inputs, setInputs] = useState({
     gasRate: '',
